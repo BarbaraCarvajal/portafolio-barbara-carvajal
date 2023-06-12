@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.titulo {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.border {
+  position: absolute;
+  font-family: 'Lilita One', cursive;
+  font-size: 80px;
+
+}
+
+.wave {
+  position: relative;
+  font-family: 'Lilita One', cursive;
+  font-size: 80px;
+
+}
+
+.border {
+  color: rgb(226, 154, 219);
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.wave {
+  color: rgb(121, 181, 212);
+  animation: wave 2s ease-in-out infinite;
+}
+
+
+@keyframes wave {
+  0%, 100% {
+    clip-path: polygon(
+      0% 47%,
+      10% 48%,
+      33% 54%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(0% 60%,
+    15% 65%,
+    34% 66%,
+    51% 62%,
+    67% 50%,
+    84% 45%,
+    100% 46%,
+    100% 100%,
+    0% 100%
+    );
+  }
+}
