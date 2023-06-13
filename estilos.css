@@ -34,9 +34,42 @@ body {
 .language-container a {
     text-decoration: none;
   }
+
+/*Proyectos*/
+
+.tituloProyecto  {
+    font-family: 'Poppins';
+    font-size: 48px;
+    color: plum;
+    font-weight: 550;
+    border-color: white;
+    text-decoration: underline white;
+  }
   
 
+
 /*cards*/
+
+.card{
+    background-color: transparent !important;
+    border: none !important;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.card-img-top.custom-border {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.carousel-item.custom-border {
+    border-top-left-radius:30px;
+    border-top-right-radius: 30px;
+}
+
 
 .card-body a {
     align-items: center;
@@ -63,10 +96,12 @@ body {
 
 .glass-card {
     /*background-color: rgba(255, 255, 255, 0.9);*/
-    border-radius: 10px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
+
 
 /* lenguajes */
 .language-img {
